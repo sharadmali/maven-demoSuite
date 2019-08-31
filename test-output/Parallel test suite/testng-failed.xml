@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Parallel test suite]">
+  <test name="Chrome Test(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="RunManager.HybridExecuteTest">
+        <methods>
+          <include name="runManager" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- RunManager.HybridExecuteTest -->
+    </classes>
+  </test> <!-- Chrome Test(failed) -->
+</suite> <!-- Failed suite [Parallel test suite] -->

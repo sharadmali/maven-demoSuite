@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Cloud Automation Test Suite]">
+  <test name="Cloud(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="testType" value="Desktop"/>
+    <classes>
+      <class name="runManager.HybridExecuteTest">
+        <methods>
+          <include name="runManager" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- runManager.HybridExecuteTest -->
+    </classes>
+  </test> <!-- Cloud(failed) -->
+</suite> <!-- Failed suite [Cloud Automation Test Suite] -->

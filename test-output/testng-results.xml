@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Cloud Automation Test Suite" duration-ms="120913" started-at="2018-07-14T18:50:52Z" finished-at="2018-07-14T18:52:53Z">
+    <groups>
+    </groups>
+    <test name="Cloud" duration-ms="120913" started-at="2018-07-14T18:50:52Z" finished-at="2018-07-14T18:52:53Z">
+      <class name="runManager.HybridExecuteTest">
+        <test-method status="PASS" signature="runManager(java.lang.String, java.lang.String)[pri:0, instance:runManager.HybridExecuteTest@12f41634]" name="runManager" duration-ms="120868" started-at="2018-07-15T00:20:52Z" finished-at="2018-07-15T00:22:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Desktop]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runManager -->
+      </class> <!-- runManager.HybridExecuteTest -->
+    </test> <!-- Cloud -->
+  </suite> <!-- Cloud Automation Test Suite -->
+</testng-results>

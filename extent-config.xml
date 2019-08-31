@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+	<configuration>
+		<!-- report theme -->
+		<!-- standard, dark -->
+		<theme>dark</theme>
+
+		<!-- document encoding -->
+		<!-- defaults to UTF-8 -->
+		<encoding>UTF-8</encoding>
+
+		<!-- protocol for script and stylesheets -->
+		<!-- defaults to https -->
+		<protocol>https</protocol>
+
+		<!-- title of the document -->
+		<documentTitle>Oracle Cloud ERP</documentTitle>
+
+		<!-- report name - displayed at top-nav -->
+		<reportName>Test Automation Run Results Report</reportName>
+
+		<!-- location of charts in the test view -->
+		<!-- top, bottom -->
+		<testViewChartLocation>top</testViewChartLocation>
+
+		<!-- custom javascript -->
+		<scripts>
+            <![CDATA[
+             
+	             function createChild() {             
+					var data = [
+						{ value: statusGroup.passChild, color: '#00af00', highlight: '#32bf32', label: 'Pass' },
+						{ value: statusGroup.failChild, color:'#F7464A', highlight: '#FF5A5E', label: 'Fail' },
+						{ value: statusGroup.fatalChild, color:'#8b0000', highlight: '#a23232', label: 'Fatal' },
+						{ value: statusGroup.errorChild, color:'#ff6347', highlight: '#ff826b', label: 'Error' },
+						{ value: statusGroup.warningChild, color: '#FDB45C', highlight: '#FFC870', label: 'Warning' },
+						{ value: statusGroup.skipChild, color: '#1e90ff', highlight: '#4aa6ff', label: 'Skip' },
+				        { value: statusGroup.infoChild, color: '#46BFBD', highlight: '#5AD3D1', label: 'Info' }
+					];					
+				    if ($('#child-analysis').length > 0) {
+					    var ctx = $('#child-analysis').get(0).getContext('2d');
+					    stepChart = new Chart(ctx).Doughnut(data, options);
+					    drawLegend(stepChart, 'child-analysis');
+				    }	             
+	             }
+	             
+	            
+			
+		            
+                $(document).ready(function() {   
+                	
+                	
+                	$("#theme-selector > span > i").hide(); 
+					$("#charts-row > div:nth-child(1) > div > div.left.panel-name").html("Test Results Summary View");
+		            $("#charts-row > div:nth-child(2) > div > div.left.panel-name").html("Test Steps Results Summary View");
+		                
+					var replacetext = {											   
+					    "Tests": "Total Tests Executed",
+					    "Steps": "Total Tests Passed",
+					    "Start": "Test Execution Start Time",
+					    "End": "Test Execution End Time",
+					    "Time Taken": "Total Test Cycle Runtime",	
+					    "2018": "2018&nbsp;&nbsp;&nbsp;&nbsp;",					   
+					    "2018 ": "2018&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",					   
+					    "Environment": "Test Environment Details",
+					    "Categories": "Test Category Details",						    			   											   		   
+					};					
+					$.each(replacetext, function(txtorig, txtnew) {
+					    var text = $("#dashboard-view").html();
+					   	$("#dashboard-view").html(text.replace(txtorig, txtnew)); 
+					});	
+					
+					var strTP = $("#charts-row > div:nth-child(1) > div > div:nth-child(3) > span");
+ 	               	var strTempTP = strTP.html();
+					strTP.html(strTempTP.replace("test(s) passed", " Test(s) Passed"));
+					
+					var strTF = $("#charts-row > div:nth-child(1) > div > div:nth-child(4)");
+ 	               	var strTempTF = strTF.html();
+					strTF.html(strTempTF.replace("test(s) failed", " Test(s) Failed"));
+					
+					var strSP = $("#charts-row > div:nth-child(2) > div > div:nth-child(3) > span");
+ 	               	var strTempSP = strSP.html();
+					strSP.html(strTempSP.replace("step(s) passed", " Step(s) Passed"));
+					
+					var strSF = $("#charts-row > div:nth-child(2) > div > div:nth-child(4)");
+ 	               	var strTempSF = strSF.html();
+					strSF.html(strTempSF.replace("step(s) failed", "Step(s) Failed"));
+					
+															
+
+               		$("#slide-out li:eq(0)").before($("#slide-out li:eq(2)")); 
+   					$("#slide-out li:eq(2)").after($("#slide-out li:eq(1)")); 
+   					
+					
+					$('.view-summary').click(function(evt) {
+					    var t = $(evt.target);
+					    
+					    function findTestById(id) {
+					        var clicked = false;
+					
+					        function find(el) {
+					            return $('.' + el).filter(function() {
+					                return ($(this).attr('test-id') == id)
+					            });
+					        }
+					
+					        function click(el) {
+					            if (el.length === 0) return;
+					
+					            if (el.is('.node'))
+					                el = el.closest('.test');
+					
+					            $("#slide-out > li:nth-child(3) > a").click();
+					            el.click();
+					            clicked = true;
+					        }
+					
+					        var t = find('test');
+					        if (t.length === 0)
+					            var t = find('node');
+					            
+					        click(t);
+					    }
+					
+					    if (t.is('.linked')) {
+					        var id = t.attr('test-id');
+					        findTestById(id);
+					    }
+						
+						if (t.is('span.category')) {
+							var name = t.text();
+							
+							$('.test').removeClass('displayed').addClass('hide').filter(function() {
+								return ($(this).find('.category').text().indexOf(name) >= 0)
+							}).addClass('displayed').removeClass('hide');
+					
+							$('.test.displayed').first().click();
+						}
+						
+						$("#test-view > div.subview-right.left > div > div.test-content > div.test-attributes > div > span").html("20");
+					});
+			         
+					
+			        
+					$('ul#slide-out li' ).find( 'li.active' ).removeClass( 'active' );
+					
+					$("#slide-out > li:nth-child(1) > a").click(function(){
+						setTimeout(function(){
+							$('.chart-box').find('ul').remove();
+							drawParentChart();
+							var data = [
+								{ value: statusGroup.passChild, color: '#00af00', highlight: '#32bf32', label: 'Pass' },
+								{ value: statusGroup.failChild, color:'#F7464A', highlight: '#FF5A5E', label: 'Fail' },
+								{ value: statusGroup.fatalChild, color:'#8b0000', highlight: '#a23232', label: 'Fatal' },
+								{ value: statusGroup.errorChild, color:'#ff6347', highlight: '#ff826b', label: 'Error' },
+								{ value: statusGroup.warningChild, color: '#FDB45C', highlight: '#FFC870', label: 'Warning' },
+								{ value: statusGroup.skipChild, color: '#1e90ff', highlight: '#4aa6ff', label: 'Skip' },
+						        { value: statusGroup.infoChild, color: '#46BFBD', highlight: '#5AD3D1', label: 'Info' }
+							];						
+						    if ($('#child-analysis').length > 0) {
+							    var ctx = $('#child-analysis').get(0).getContext('2d');
+							    stepChart = new Chart(ctx).Doughnut(data, options);
+							    drawLegend(stepChart, 'child-analysis');
+						    }
+	 					},20);
+ 					});  					 					
+ 						
+					$("#slide-out > li:nth-child(1) > a").trigger( "click" ); 
+  						
+					$("#dashboard-view > div > div:nth-child(3) > div.col.s6 > div > table > tbody > tr:nth-child(1) > th:nth-child(1)").html("Feature Area/Module");
+					$("#dashboard-view > div > div:nth-child(3) > div.col.s6 > div > table > tbody > tr:nth-child(1) > th:nth-child(4)").text("Total Executed");
+					$("#dashboard-view > div > div:nth-child(3) > div.col.s6 > div > table > tbody > tr:nth-child(1) > th:nth-child(2)").html("Total Pass");
+					$("#dashboard-view > div > div:nth-child(3) > div.col.s6 > div > table > tbody > tr:nth-child(1) > th:nth-child(3)").html("Total Fail");											
+					var nPass = $("#dashboard-view > div > div:nth-child(3) > div.col.s6 > div > table > tbody > tr:nth-child(2) > td:nth-child(2)").text();                                                            
+                    var nFail = $("#dashboard-view > div > div:nth-child(3) > div.col.s6 > div > table > tbody > tr:nth-child(2) > td:nth-child(3)").text();                   
+					$("#dashboard-view > div > div:nth-child(3) > div.col.s6 > div > table > tbody > tr:nth-child(2) > td:nth-child(4)").text(parseInt(nPass) + parseInt(nFail)); 						
+					var strDuration = $("#dashboard-view > div > div:nth-child(3) > div:nth-child(5) > div > div").html(); 	                 	
+                 	var strDurationTemp1 = strDuration.indexOf('+'); 
+                 	var strDurationTemp2 = strDuration.slice(0,strDurationTemp1); 	                 
+                 	$("#dashboard-view > div > div:nth-child(3) > div:nth-child(5) > div > div").html(strDurationTemp2);	
+					
+					$("body").css("font-size", "17px");
+					var ab =  $("#nav-mobile > li:nth-child(1) > a > span").html();
+					$("#nav-mobile > li:nth-child(1) > a > span").html(ab + " IST"); 					
+					$(".brand-logo").html("Demo");										
+					var d = $("#charts-row > div:nth-child(1) > div > div:nth-child(4)");
+					d.text(d.text().trim().replace("others", " "));					
+					var e = $("#charts-row > div:nth-child(1) > div > div:nth-child(4)");
+					e.text(e.text().trim().replace(", 0", " "));
+					
+					var f = $("#charts-row > div:nth-child(2) > div > div:nth-child(4)");
+					f.text(f.text().trim().replace("others", "Info"));
+					$("#category-view > div.subview-right.left > div > div > div.category-tests > table > thead > tr > th:nth-child(1)").width(200)
+					
+					$(".label.time-taken.grey.lighten-1.white-text").each(function() { 
+					  var e = $(this).text();
+					  console.log("value of e:"+ e);
+					  var f = e.indexOf('+');
+					  var g = e.slice(0,f);
+					  console.log("value of g:"+ g);
+					  $(this).text(g);
+					});
+					
+					$(".test-time").hide();
+					
+					var x = $("#charts-row > div:nth-child(2) > div > div:nth-child(4)").text();
+					var y = $("#dashboard-view > div > div:nth-child(3) > div:nth-child(2) > div > div").text();					
+					$("#charts-row > div:nth-child(2) > div > div:nth-child(4)").html(x + " , " +y + " Step(s) executed in total");					
+					var z = $("#charts-row > div:nth-child(1) > div > div:nth-child(3) > span > span").text();
+					$("#dashboard-view > div > div:nth-child(3) > div:nth-child(2) > div > div").html(z);
+					
+					
+																
+            });
+            ]]>
+		</scripts>
+		
+		
+            
+
+		<!-- custom styles -->
+		<styles>
+            <![CDATA[            			            	
+	            	.brand-logo.blue.darken-3 {font-weight: bold !important; font-size: x-large !important; padding-left: 5px}                
+		            .report-name {font-size: x-large !important;}
+		            .report-name {font-weight: bold !important;}    
+		            
+	            	.row .col.s2 {width: 20%}
+	            	.row .col.s4 {width: 40%}
+	            	.row .col.s6 {width: 60%}
+	            	
+	            	.grey.lighten-1 {background-color: #cc8634!important}
+					.card-panel.r {text-align: center; font-weight: bold !important; color:#0fbba5 !important}
+ 					.card-panel .panel-lead {position: initial; padding-top:20px}
+	            	
+	            	.right.label.cyan.white-text {float: left !important;font-size: 17px; color:#0fbba5 !important}
+	            	
+	            	.text-small {font-size: 15px}
+	            	
+	            	.left.panel-name {font-weight: bold !important; color:#0fbba5 !important}	
+	            	
+	            	.cyan {background-color: rgba(0,0,0,0.26) !important;}	
+	            	.panel-lead {color: #ddd !important}  
+	            	.test-status.right.pass {font-size: 20px; margin-top:-25px} 
+	            	.test-status.right.fail {font-size: 20px; margin-top:-25px}  
+	            	.test-status.pass {font-size: 20px}
+	            	.test-status.fail {font-size: 20px}         	
+	            		            	
+            ]]>
+		</styles>
+	</configuration>
+</extentreports>

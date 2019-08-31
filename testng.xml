@@ -1,0 +1,34 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Cloud Automation Test Suite" thread-count="1" parallel="tests" >
+<!--     <test name="Cloud"> -->
+<!--         <parameter name="browser" value="Firefox"/> -->
+<!--         <classes> -->
+<!--             <class name="RunManager.HybridExecuteTest"/> -->
+<!--         </classes> -->
+<!--     </test> -->
+    
+<!--      <test name="Cloud"> -->
+<!--         <parameter name="browser" value="Edge"/> -->
+<!--         <classes> -->
+<!--             <class name="RunManager.HybridExecuteTest"/> -->
+<!--         </classes> -->
+<!--     </test> -->
+    
+    <test name="Cloud">
+        <parameter name="browser" value="Chrome"/>
+<!-- 		<parameter name="testType" value="Mobile"/>  -->
+        <parameter name="testType" value="Desktop"/>
+        <classes>
+            <class name="runManager.HybridExecuteTest"/>
+        </classes>
+    </test>
+
+<!--     <test name="Cloud"> -->
+<!--         <parameter name="browser" value="MobileApk"/> -->
+<!--         <parameter name="testType" value="Mobile"/> -->
+<!--         <classes> -->
+<!--             <class name="runManager.HybridExecuteTest"/> -->
+<!--         </classes> -->
+<!--     </test> -->
+</suite>

@@ -1,0 +1,118 @@
+2018-07-15 00:21:01 INFO  HybridExecuteTest:52 - Class and Method : LoginLogout -> applicationURL
+2018-07-15 00:21:04 INFO  HybridExecuteTest:403 - Browser <span style='font-weight:bold;color:#4CAF50;'> 'http://app.datamoto.com/login' </span> Invoked Successfully.
+2018-07-15 00:21:04 INFO  HybridExecuteTest:75 - Class and Method : LoginLogout -> login
+2018-07-15 00:21:04 INFO  HybridExecuteTest:409 - Page <span style='font-weight:bold;color:#4CAF50;'> 'Login' </span> is displayed successfully.
+2018-07-15 00:21:04 INFO  HybridExecuteTest:403 - Successfully entered <span style='font-weight:bold;color:#4CAF50;'> 'admin@gmail.com' </span> in 'User Name' textbox.
+2018-07-15 00:21:04 INFO  HybridExecuteTest:403 - Successfully entered <span style='font-weight:bold;color:#4CAF50;'> 'password@11' </span> in 'Password' textbox.
+2018-07-15 00:21:09 INFO  HybridExecuteTest:403 - Successfully clicked on <span style='font-weight:bold;color:#4CAF50;'>'LogIn'</span>  WebElement.
+2018-07-15 00:21:09 INFO  HybridExecuteTest:41 - Class and Method : HomePage -> goToHome
+2018-07-15 00:21:09 INFO  HybridExecuteTest:409 - Page <span style='font-weight:bold;color:#4CAF50;'> 'Home' </span> is displayed successfully.
+2018-07-15 00:21:09 INFO  HybridExecuteTest:403 - Successfully verified page title - Actual : <span style='font-weight:bold;color:#4CAF50;'>'datamoto | Invoice Quote Order Inventory Accounting'</span>  Expected : <span style='font-weight:bold;color:#4CAF50;'>'datamoto | Invoice Quote Order Inventory Accounting'</span>.
+2018-07-15 00:21:09 INFO  HybridExecuteTest:102 - Class and Method : LoginLogout -> logout
+2018-07-15 00:21:10 INFO  HybridExecuteTest:403 - Successfully clicked on <span style='font-weight:bold;color:#4CAF50;'>'Sign Off'</span>  WebElement.
+2018-07-15 00:21:20 INFO  HybridExecuteTest:52 - Class and Method : LoginLogout -> applicationURL
+2018-07-15 00:21:23 INFO  HybridExecuteTest:403 - Browser <span style='font-weight:bold;color:#4CAF50;'> 'http://app.datamoto.com/login' </span> Invoked Successfully.
+2018-07-15 00:21:23 INFO  HybridExecuteTest:75 - Class and Method : LoginLogout -> login
+2018-07-15 00:21:23 INFO  HybridExecuteTest:409 - Page <span style='font-weight:bold;color:#4CAF50;'> 'Login' </span> is displayed successfully.
+2018-07-15 00:21:23 INFO  HybridExecuteTest:403 - Successfully entered <span style='font-weight:bold;color:#4CAF50;'> 'admin@gmail.com' </span> in 'User Name' textbox.
+2018-07-15 00:21:23 INFO  HybridExecuteTest:403 - Successfully entered <span style='font-weight:bold;color:#4CAF50;'> 'password@11' </span> in 'Password' textbox.
+2018-07-15 00:21:28 INFO  HybridExecuteTest:403 - Successfully clicked on <span style='font-weight:bold;color:#4CAF50;'>'LogIn'</span>  WebElement.
+2018-07-15 00:21:28 INFO  HybridExecuteTest:41 - Class and Method : HomePage -> goToHome
+2018-07-15 00:21:28 INFO  HybridExecuteTest:409 - Page <span style='font-weight:bold;color:#4CAF50;'> 'Home' </span> is displayed successfully.
+2018-07-15 00:21:28 INFO  HybridExecuteTest:403 - Successfully verified page title - Actual : <span style='font-weight:bold;color:#4CAF50;'>'datamoto | Invoice Quote Order Inventory Accounting'</span>  Expected : <span style='font-weight:bold;color:#4CAF50;'>'datamoto | Invoice Quote Order Inventory Accounting'</span>.
+2018-07-15 00:21:28 INFO  HybridExecuteTest:102 - Class and Method : LoginLogout -> logout
+2018-07-15 00:21:29 INFO  HybridExecuteTest:403 - Successfully clicked on <span style='font-weight:bold;color:#4CAF50;'>'Sign Off'</span>  WebElement.
+2018-07-15 00:21:40 INFO  HybridExecuteTest:52 - Class and Method : LoginLogout -> applicationURL
+2018-07-15 00:21:41 INFO  HybridExecuteTest:403 - Browser <span style='font-weight:bold;color:#4CAF50;'> 'http://app.datamoto.com/login' </span> Invoked Successfully.
+2018-07-15 00:21:41 INFO  HybridExecuteTest:75 - Class and Method : LoginLogout -> login
+2018-07-15 00:21:41 INFO  HybridExecuteTest:409 - Page <span style='font-weight:bold;color:#4CAF50;'> 'Login' </span> is displayed successfully.
+2018-07-15 00:21:42 INFO  HybridExecuteTest:403 - Successfully entered <span style='font-weight:bold;color:#4CAF50;'> 'admin@gmail.com' </span> in 'User Name' textbox.
+2018-07-15 00:21:42 INFO  HybridExecuteTest:403 - Successfully entered <span style='font-weight:bold;color:#4CAF50;'> 'password@11' </span> in 'Password' textbox.
+2018-07-15 00:21:46 INFO  HybridExecuteTest:403 - Successfully clicked on <span style='font-weight:bold;color:#4CAF50;'>'LogIn'</span>  WebElement.
+2018-07-15 00:21:46 INFO  HybridExecuteTest:41 - Class and Method : HomePage -> goToHome
+2018-07-15 00:21:46 INFO  HybridExecuteTest:409 - Page <span style='font-weight:bold;color:#4CAF50;'> 'Home' </span> is displayed successfully.
+2018-07-15 00:21:46 INFO  HybridExecuteTest:403 - Successfully verified page title - Actual : <span style='font-weight:bold;color:#4CAF50;'>'datamoto | Invoice Quote Order Inventory Accounting'</span>  Expected : <span style='font-weight:bold;color:#4CAF50;'>'datamoto | Invoice Quote Order Inventory Accounting'</span>.
+2018-07-15 00:21:48 INFO  HybridExecuteTest:403 - Successfully clicked on <span style='font-weight:bold;color:#4CAF50;'>'Customer'</span>  WebElement.
+2018-07-15 00:21:48 INFO  HybridExecuteTest:82 - Class and Method : InventoryManagement -> createCustomer
+2018-07-15 00:21:49 INFO  HybridExecuteTest:403 - Successfully clicked on <span style='font-weight:bold;color:#4CAF50;'>'Create New Customer'</span>  WebElement.
+2018-07-15 00:21:49 INFO  HybridExecuteTest:409 - Page <span style='font-weight:bold;color:#4CAF50;'> 'Create New Customer' </span> is displayed successfully.
+2018-07-15 00:21:50 INFO  HybridExecuteTest:403 - Successfully entered <span style='font-weight:bold;color:#4CAF50;'> 'CU_ymPFw' </span> in 'Customer Name' textbox.
+2018-07-15 00:21:50 INFO  HybridExecuteTest:403 - Successfully entered <span style='font-weight:bold;color:#4CAF50;'> '100' </span> in 'VAT/Tax ID' textbox.
+2018-07-15 00:21:50 INFO  HybridExecuteTest:403 - Value <span style='font-weight:bold;color:#4CAF50;'>'Customer'</span> is selected successfully from 'Type' list.
+2018-07-15 00:21:50 INFO  HybridExecuteTest:403 - Value <span style='font-weight:bold;color:#4CAF50;'>'UNITED KINGDOM'</span> is selected successfully from 'Country' list.
+2018-07-15 00:21:50 INFO  HybridExecuteTest:403 - Value <span style='font-weight:bold;color:#4CAF50;'>'United Kingdom Pound'</span> is selected successfully from 'Currency' list.
+2018-07-15 00:21:50 INFO  HybridExecuteTest:403 - Value <span style='font-weight:bold;color:#4CAF50;'>'English'</span> is selected successfully from 'Language' list.
+2018-07-15 00:21:51 INFO  HybridExecuteTest:403 - Value <span style='font-weight:bold;color:#4CAF50;'>'Accounting'</span> is selected successfully from 'Industry' list.
+2018-07-15 00:21:51 INFO  HybridExecuteTest:403 - Value <span style='font-weight:bold;color:#4CAF50;'>'Over 1000'</span> is selected successfully from 'Company Size' list.
+2018-07-15 00:21:51 INFO  HybridExecuteTest:403 - Value <span style='font-weight:bold;color:#4CAF50;'>'USD 100M and Over'</span> is selected successfully from 'Revenue' list.
+2018-07-15 00:21:51 INFO  HybridExecuteTest:403 - Successfully entered <span style='font-weight:bold;color:#4CAF50;'> 'richard.london@yopmail.com' </span> in 'Email' textbox.
+2018-07-15 00:21:52 INFO  HybridExecuteTest:403 - Successfully entered <span style='font-weight:bold;color:#4CAF50;'> 'Richard' </span> in 'First Name' textbox.
+2018-07-15 00:21:52 INFO  HybridExecuteTest:403 - Successfully entered <span style='font-weight:bold;color:#4CAF50;'> 'London' </span> in 'Last Name' textbox.
+2018-07-15 00:21:52 INFO  HybridExecuteTest:403 - Successfully entered <span style='font-weight:bold;color:#4CAF50;'> 'PARK STREET 48' </span> in 'Street 1' textbox.
+2018-07-15 00:21:53 INFO  HybridExecuteTest:403 - Successfully entered <span style='font-weight:bold;color:#4CAF50;'> 'RED LION COURT' </span> in 'Street 2' textbox.
+2018-07-15 00:21:53 INFO  HybridExecuteTest:403 - Successfully entered <span style='font-weight:bold;color:#4CAF50;'> 'London' </span> in 'City' textbox.
+2018-07-15 00:21:53 INFO  HybridExecuteTest:403 - Successfully entered <span style='font-weight:bold;color:#4CAF50;'> 'England' </span> in 'State' textbox.
+2018-07-15 00:21:53 INFO  HybridExecuteTest:403 - Successfully entered <span style='font-weight:bold;color:#4CAF50;'> 'SE1 9EQ' </span> in 'Pincode' textbox.
+2018-07-15 00:21:54 INFO  HybridExecuteTest:403 - Successfully entered <span style='font-weight:bold;color:#4CAF50;'> '44 2072323718' </span> in 'Mobile' textbox.
+2018-07-15 00:21:56 INFO  HybridExecuteTest:403 - Successfully clicked on <span style='font-weight:bold;color:#4CAF50;'>'Save'</span>  WebElement.
+2018-07-15 00:21:56 INFO  HybridExecuteTest:102 - Class and Method : LoginLogout -> logout
+2018-07-15 00:21:56 INFO  HybridExecuteTest:403 - Successfully clicked on <span style='font-weight:bold;color:#4CAF50;'>'Sign Off'</span>  WebElement.
+2018-07-15 00:22:07 INFO  HybridExecuteTest:52 - Class and Method : LoginLogout -> applicationURL
+2018-07-15 00:22:08 INFO  HybridExecuteTest:403 - Browser <span style='font-weight:bold;color:#4CAF50;'> 'http://app.datamoto.com/login' </span> Invoked Successfully.
+2018-07-15 00:22:08 INFO  HybridExecuteTest:75 - Class and Method : LoginLogout -> login
+2018-07-15 00:22:08 INFO  HybridExecuteTest:409 - Page <span style='font-weight:bold;color:#4CAF50;'> 'Login' </span> is displayed successfully.
+2018-07-15 00:22:08 INFO  HybridExecuteTest:403 - Successfully entered <span style='font-weight:bold;color:#4CAF50;'> 'admin@gmail.com' </span> in 'User Name' textbox.
+2018-07-15 00:22:09 INFO  HybridExecuteTest:403 - Successfully entered <span style='font-weight:bold;color:#4CAF50;'> 'password@11' </span> in 'Password' textbox.
+2018-07-15 00:22:13 INFO  HybridExecuteTest:403 - Successfully clicked on <span style='font-weight:bold;color:#4CAF50;'>'LogIn'</span>  WebElement.
+2018-07-15 00:22:13 INFO  HybridExecuteTest:41 - Class and Method : HomePage -> goToHome
+2018-07-15 00:22:13 INFO  HybridExecuteTest:409 - Page <span style='font-weight:bold;color:#4CAF50;'> 'Home' </span> is displayed successfully.
+2018-07-15 00:22:13 INFO  HybridExecuteTest:403 - Successfully verified page title - Actual : <span style='font-weight:bold;color:#4CAF50;'>'datamoto | Invoice Quote Order Inventory Accounting'</span>  Expected : <span style='font-weight:bold;color:#4CAF50;'>'datamoto | Invoice Quote Order Inventory Accounting'</span>.
+2018-07-15 00:22:14 INFO  HybridExecuteTest:403 - Successfully clicked on <span style='font-weight:bold;color:#4CAF50;'>'Customer'</span>  WebElement.
+2018-07-15 00:22:14 INFO  HybridExecuteTest:82 - Class and Method : InventoryManagement -> createCustomer
+2018-07-15 00:22:16 INFO  HybridExecuteTest:403 - Successfully clicked on <span style='font-weight:bold;color:#4CAF50;'>'Create New Customer'</span>  WebElement.
+2018-07-15 00:22:16 INFO  HybridExecuteTest:409 - Page <span style='font-weight:bold;color:#4CAF50;'> 'Create New Customer' </span> is displayed successfully.
+2018-07-15 00:22:16 INFO  HybridExecuteTest:403 - Successfully entered <span style='font-weight:bold;color:#4CAF50;'> 'CU_NSWhW' </span> in 'Customer Name' textbox.
+2018-07-15 00:22:17 INFO  HybridExecuteTest:403 - Successfully entered <span style='font-weight:bold;color:#4CAF50;'> '100' </span> in 'VAT/Tax ID' textbox.
+2018-07-15 00:22:17 INFO  HybridExecuteTest:403 - Value <span style='font-weight:bold;color:#4CAF50;'>'Customer'</span> is selected successfully from 'Type' list.
+2018-07-15 00:22:17 INFO  HybridExecuteTest:403 - Value <span style='font-weight:bold;color:#4CAF50;'>'UNITED KINGDOM'</span> is selected successfully from 'Country' list.
+2018-07-15 00:22:17 INFO  HybridExecuteTest:403 - Value <span style='font-weight:bold;color:#4CAF50;'>'United Kingdom Pound'</span> is selected successfully from 'Currency' list.
+2018-07-15 00:22:17 INFO  HybridExecuteTest:403 - Value <span style='font-weight:bold;color:#4CAF50;'>'English'</span> is selected successfully from 'Language' list.
+2018-07-15 00:22:17 INFO  HybridExecuteTest:403 - Value <span style='font-weight:bold;color:#4CAF50;'>'Accounting'</span> is selected successfully from 'Industry' list.
+2018-07-15 00:22:17 INFO  HybridExecuteTest:403 - Value <span style='font-weight:bold;color:#4CAF50;'>'Over 1000'</span> is selected successfully from 'Company Size' list.
+2018-07-15 00:22:18 INFO  HybridExecuteTest:403 - Value <span style='font-weight:bold;color:#4CAF50;'>'USD 100M and Over'</span> is selected successfully from 'Revenue' list.
+2018-07-15 00:22:18 INFO  HybridExecuteTest:403 - Successfully entered <span style='font-weight:bold;color:#4CAF50;'> 'richard.london@yopmail.com' </span> in 'Email' textbox.
+2018-07-15 00:22:18 INFO  HybridExecuteTest:403 - Successfully entered <span style='font-weight:bold;color:#4CAF50;'> 'Richard' </span> in 'First Name' textbox.
+2018-07-15 00:22:19 INFO  HybridExecuteTest:403 - Successfully entered <span style='font-weight:bold;color:#4CAF50;'> 'London' </span> in 'Last Name' textbox.
+2018-07-15 00:22:19 INFO  HybridExecuteTest:403 - Successfully entered <span style='font-weight:bold;color:#4CAF50;'> 'PARK STREET 48' </span> in 'Street 1' textbox.
+2018-07-15 00:22:19 INFO  HybridExecuteTest:403 - Successfully entered <span style='font-weight:bold;color:#4CAF50;'> 'RED LION COURT' </span> in 'Street 2' textbox.
+2018-07-15 00:22:19 INFO  HybridExecuteTest:403 - Successfully entered <span style='font-weight:bold;color:#4CAF50;'> 'London' </span> in 'City' textbox.
+2018-07-15 00:22:20 INFO  HybridExecuteTest:403 - Successfully entered <span style='font-weight:bold;color:#4CAF50;'> 'England' </span> in 'State' textbox.
+2018-07-15 00:22:20 INFO  HybridExecuteTest:403 - Successfully entered <span style='font-weight:bold;color:#4CAF50;'> 'SE1 9EQ' </span> in 'Pincode' textbox.
+2018-07-15 00:22:20 INFO  HybridExecuteTest:403 - Successfully entered <span style='font-weight:bold;color:#4CAF50;'> '44 2072323718' </span> in 'Mobile' textbox.
+2018-07-15 00:22:22 INFO  HybridExecuteTest:403 - Successfully clicked on <span style='font-weight:bold;color:#4CAF50;'>'Save'</span>  WebElement.
+2018-07-15 00:22:22 INFO  HybridExecuteTest:102 - Class and Method : LoginLogout -> logout
+2018-07-15 00:22:23 INFO  HybridExecuteTest:403 - Successfully clicked on <span style='font-weight:bold;color:#4CAF50;'>'Sign Off'</span>  WebElement.
+2018-07-15 00:22:32 INFO  HybridExecuteTest:52 - Class and Method : LoginLogout -> applicationURL
+2018-07-15 00:22:34 INFO  HybridExecuteTest:403 - Browser <span style='font-weight:bold;color:#4CAF50;'> 'http://app.datamoto.com/login' </span> Invoked Successfully.
+2018-07-15 00:22:34 INFO  HybridExecuteTest:75 - Class and Method : LoginLogout -> login
+2018-07-15 00:22:34 INFO  HybridExecuteTest:409 - Page <span style='font-weight:bold;color:#4CAF50;'> 'Login' </span> is displayed successfully.
+2018-07-15 00:22:34 INFO  HybridExecuteTest:403 - Successfully entered <span style='font-weight:bold;color:#4CAF50;'> 'admin@gmail.com' </span> in 'User Name' textbox.
+2018-07-15 00:22:35 INFO  HybridExecuteTest:403 - Successfully entered <span style='font-weight:bold;color:#4CAF50;'> 'password@11' </span> in 'Password' textbox.
+2018-07-15 00:22:39 INFO  HybridExecuteTest:403 - Successfully clicked on <span style='font-weight:bold;color:#4CAF50;'>'LogIn'</span>  WebElement.
+2018-07-15 00:22:39 INFO  HybridExecuteTest:41 - Class and Method : HomePage -> goToHome
+2018-07-15 00:22:39 INFO  HybridExecuteTest:409 - Page <span style='font-weight:bold;color:#4CAF50;'> 'Home' </span> is displayed successfully.
+2018-07-15 00:22:39 INFO  HybridExecuteTest:403 - Successfully verified page title - Actual : <span style='font-weight:bold;color:#4CAF50;'>'datamoto | Invoice Quote Order Inventory Accounting'</span>  Expected : <span style='font-weight:bold;color:#4CAF50;'>'datamoto | Invoice Quote Order Inventory Accounting'</span>.
+2018-07-15 00:22:39 INFO  HybridExecuteTest:102 - Class and Method : LoginLogout -> logout
+2018-07-15 00:22:39 INFO  HybridExecuteTest:403 - Successfully clicked on <span style='font-weight:bold;color:#4CAF50;'>'Sign Off'</span>  WebElement.
+2018-07-15 00:22:46 INFO  HybridExecuteTest:52 - Class and Method : LoginLogout -> applicationURL
+2018-07-15 00:22:47 INFO  HybridExecuteTest:403 - Browser <span style='font-weight:bold;color:#4CAF50;'> 'http://app.datamoto.com/login' </span> Invoked Successfully.
+2018-07-15 00:22:47 INFO  HybridExecuteTest:75 - Class and Method : LoginLogout -> login
+2018-07-15 00:22:47 INFO  HybridExecuteTest:409 - Page <span style='font-weight:bold;color:#4CAF50;'> 'Login' </span> is displayed successfully.
+2018-07-15 00:22:47 INFO  HybridExecuteTest:403 - Successfully entered <span style='font-weight:bold;color:#4CAF50;'> 'admin@gmail.com' </span> in 'User Name' textbox.
+2018-07-15 00:22:47 INFO  HybridExecuteTest:403 - Successfully entered <span style='font-weight:bold;color:#4CAF50;'> 'password@11' </span> in 'Password' textbox.
+2018-07-15 00:22:51 INFO  HybridExecuteTest:403 - Successfully clicked on <span style='font-weight:bold;color:#4CAF50;'>'LogIn'</span>  WebElement.
+2018-07-15 00:22:51 INFO  HybridExecuteTest:41 - Class and Method : HomePage -> goToHome
+2018-07-15 00:22:51 INFO  HybridExecuteTest:409 - Page <span style='font-weight:bold;color:#4CAF50;'> 'Home' </span> is displayed successfully.
+2018-07-15 00:22:51 INFO  HybridExecuteTest:403 - Successfully verified page title - Actual : <span style='font-weight:bold;color:#4CAF50;'>'datamoto | Invoice Quote Order Inventory Accounting'</span>  Expected : <span style='font-weight:bold;color:#4CAF50;'>'datamoto | Invoice Quote Order Inventory Accounting'</span>.
+2018-07-15 00:22:51 INFO  HybridExecuteTest:102 - Class and Method : LoginLogout -> logout
+2018-07-15 00:22:52 INFO  HybridExecuteTest:403 - Successfully clicked on <span style='font-weight:bold;color:#4CAF50;'>'Sign Off'</span>  WebElement.
